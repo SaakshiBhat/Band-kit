@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  
+}
+header{
+    background:linear-gradient(to right,red,orange, yellow,green,blue,indigo,violet);
+    height: 80px;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 50px;
+}
+
+.logo{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lobster',cursive;
+    
+}
+
+.contain{
+    width: 100%; 
+    height: 100%;
+    padding: 80px;
+    background:linear-gradient(to right,red,orange, yellow,green,blue,indigo,violet);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner{
+    width: 80%;
+    height: auto;
+    margin: 0 10%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-row-gap: 50px;
+}
+
+
+.inner div {
+    justify-self: center ;
+    width: 20vh;
+    height: 20vh;
+    border: 7px double black;
+    cursor: pointer;
+}
+
+#crash{
+    background: url('instruments/crash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kick{
+    background: url('instruments/kick.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#snare{
+    background: url('instruments/snare.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tom1{
+    background: url('instruments/tom1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tom2{
+    background: url('instruments/tom2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tom3{
+    background: url('instruments/tom3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tom4{
+    background: url('instruments/tom4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: 3/2;
+}
+
+@media (max-width:900px){
+
+    .inner{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
